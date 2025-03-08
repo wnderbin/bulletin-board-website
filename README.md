@@ -15,6 +15,25 @@
 
 **Author:** wnderbin
 
-## INSTALLING
+## INSTALLING AND LAUNCH
 
-...
+```
+git clone https://github.com/wnderbin/bulletin-board-website
+
+( You may need to install the sqlite3 driver )
+( go get github.com/mattn/go-sqlite3 )
+
+cd bulletin-board-website/cmd/bulletin-board
+go run main.go
+
+---
+
+(You can specify your port, but then the navigation on the site will not work correctly.)
+(To do this, you will need to correct port 8080 to yours in the files.)
+(Files: delete_bulletin.html; main_page.html; not_found.html; send_form.html; update_bulletin)
+
+go run main.go 8081
+```
+
+### PREREQUISITES
+* Install sqlite3 driver with go get ...
