@@ -1,0 +1,21 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ .Title }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/send_form.css"> {{ end }}
+
+{{ define "source" }}
+    <div class="background"> </div>
+
+    <h1 align="center"> Your bulletin has been successfully sent! </h1>
+    <h2 align="center"> It will appear on the bulletin board soon. </h2>
+
+    <h3 align="center"> Your bulletin: </h3>
+    <h4 align="center"> [Product name] - {{ .Name }} </h4> 
+    <h4 align="center"> [Description] - {{ .Description }} </h4> 
+    <h4 align="center"> [Price] - {{ .Price }} </h4> 
+    <h4 align="center"> [Contacts] - {{ .Contacts }} </h4> 
+
+    <div class="link">
+        <a href="http://localhost:8080/main/">main page</a>
+    </div>
+{{ end }}

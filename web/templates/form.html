@@ -1,0 +1,26 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ . }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/form.css"> {{ end }}
+
+{{ define "source" }}
+    <div class="background"> </div>
+
+    <h1 align="center"> Add bulletin </h1>
+    
+    <form method="POST" action="postform">
+        <label>Product name</label><br>
+        <input type="text" name="name" required/><br><br>
+
+        <label>Description</label><br>
+        <input type="text" name="description" required/><br><br>
+
+        <label>Price</label><br>
+        <input type="number" name="price" required/><br><br>
+
+        <label>Contact information</label><br>
+        <input type="text" name="contacts" required/><br><br>
+
+        <input type="submit" value="Submit" />
+    </form>
+{{ end }}

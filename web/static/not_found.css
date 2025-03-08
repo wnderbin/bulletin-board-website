@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+}
+
+h1, h2 {
+    color: white;
+    position: relative;
+}
+
+h4, a {
+    color: white
+}
+
+.links {
+    position: absolute;
+}
+
+.background {
+    background-image: url("background/background.jpg");
+    width: 1900px;
+    height: 1000px;
+    background-size: cover;
+    position: absolute;
+}
+
+.banner {
+    background-image: url("not_found_assets/banner.jpg");
+    width: 650px;
+    height: 650px;
+    background-size: cover;
+    position: absolute;
+    top: 170px;
+    left: 34%;
+}

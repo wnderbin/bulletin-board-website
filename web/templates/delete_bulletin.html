@@ -1,0 +1,13 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ . }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/delete_bulletin.css"> {{ end }}
+
+{{ define "source" }}
+    <div class="background"></div>
+    <h1 align="center"> Your bulletin has been successfully removed </h1>
+
+    <div class="link">
+        <a href="http://localhost:8080/main/">main page</a>
+    </div>
+{{ end }}

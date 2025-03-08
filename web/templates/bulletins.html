@@ -1,0 +1,18 @@
+{{ template "layout" . }}
+
+{{ define "title" }} Bulletins {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/bulletins.css"> {{ end }}
+
+{{ define "source" }}
+    <h1 align="center"> Bulletins: </h1>
+    {{ range $b := .bulletins }}
+            <div>
+                <h4 align="center"> Id: {{ $b.Id }} </h4>
+                <p align="center"> Product: {{ $b.Name }} </p>
+                <p align="center"> Description: {{ $b.Description }} </p>
+                <p align="center"> Price: {{ $b.Price }} </p>
+                <p align="center"> Contacts: {{ $b.Contacts }} </p>
+            </div>
+        <br>
+    {{ end }}
+{{ end }}

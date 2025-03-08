@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+.background {
+    background-image: url("background/background.jpg");
+    width: 1900px;
+    height: 1000px;
+    background-size: cover;
+    position: absolute;
+}
+
+form {
+    position: absolute;
+    left: 45%;
+}
+
+input[type="submit"] {
+    color: white;
+    background: black;
+    position: relative;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    background: grey;
+    position: relative;
+}
+
+input {
+    color: black;
+    background: rgb(175, 175, 175);
+    position: relative;
+}
+
+h1, label {
+    color: white;
+    position: relative;
+}

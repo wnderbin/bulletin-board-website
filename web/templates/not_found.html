@@ -1,0 +1,21 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ . }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/not_found.css"> {{ end }}
+
+{{ define "source" }}
+    <div class="background"> </div>
+    <h1 align="center"> Page not found </h1>
+    <h2 align="center"> 404 </h2>
+    <h2 align="center"> :( </h2>
+
+    <div class="links">
+        <h4> Links (see main page for details): </h4>
+        <a href="http://localhost:8080/main/"> Main page </a> <br>
+        <a href="http://localhost:8080/bulletin/"> Bulletins </a> <br>
+        <a href="http://localhost:8080/bulletin/add/"> Add your bulletin </a> 
+    </div>
+
+
+    <div class="banner"> </div>
+{{ end }}
